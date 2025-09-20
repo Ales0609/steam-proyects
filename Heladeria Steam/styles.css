@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.contenedor {
+    background: rgb(26, 26, 26);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: left;
+}
+
+
+.contenedor h1 {
+    color: #f7ff03;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contenedor h2{
+    color: white;
+    padding-top: 10px;
+}
+
+.contenedor label {
+    color: white;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.contenedor select, .contenedor input {
+    color: white;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #f7ff03;
+    margin-bottom: 15px;
+    background-color: rgb(26, 26, 26); 
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contenedor button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f7ff03;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contenedor button:hover {
+    background-color: #b3b901;
+}
+
+#imagenHelado {
+    display: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}

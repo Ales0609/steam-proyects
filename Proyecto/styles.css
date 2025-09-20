@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181829;
+    color: white;
+}
+
+header {
+    background-color: #181829;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+input:focus {
+    transform: scale(1.05);
+    outline: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 32px;
+}
+
+.pelicula {
+    position: relative;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pelicula:hover {
+    transform: scale(1.05);
+}
+
+.fondo {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+}
+
+.fondo:hover{
+    transition: 1s;
+    filter: brightness(1.1)
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 19px;
+}

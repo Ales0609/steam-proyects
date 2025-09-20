@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    background-color: grey;
+    padding: 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+input{
+    margin: 5px;
+    height: 250px;
+    width: 250px;
+    border: none;
+    border-radius: 20px;
+    font-size: 70px;
+    text-align: center;
+    transition: 1s;
+}

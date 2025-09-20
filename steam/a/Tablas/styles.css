@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.principal{
+    text-align: center;
+    background-color: darkgray;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-top: 20px;
+}
+
+button{
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+}
+
+th{
+    background-color: #707070;
+}
+
+td{
+    background-color: #cdcbcb;
+}

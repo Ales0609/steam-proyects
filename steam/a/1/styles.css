@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.tarjeta{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.boton{
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: aliceblue;
+    
+}

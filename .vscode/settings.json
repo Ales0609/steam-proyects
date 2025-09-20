@@ -1,0 +1,8 @@
+{
+    "editor.quickSuggestions": {
+        "comments": "inline",
+        "strings": "inline"
+    },
+    "editor.quickSuggestionsDelay": 5,
+    "editor.suggest.snippetsPreventQuickSuggestions": true
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Resumen de Película</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #181829;
+            color: white;
+            padding: 32px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin-top: 16px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 16px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 32px;
+            color: yellow;
+            text-decoration: none;
+        }
+
+        a:hover{
+            transition: 0.5s;
+            color: rgb(187, 197, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo"></h1>
+    <img id="imagen" alt="Imagen de la película" />
+    <p id="resumen"></p>
+    <a href="index.html">← Volver al catálogo</a>
+
+    <script>
+    // Recupera los datos guardados en localStorage al hacer click en la tarjeta de la pelicula y si hay datos, los muestra
+        const datos = JSON.parse(localStorage.getItem("peliculaSeleccionada"));
+        if (datos) {
+            document.getElementById("titulo").textContent = datos.titulo;
+            document.getElementById("imagen").src = datos.imagen;
+            document.getElementById("resumen").textContent = datos.resumen;
+        }
+    </script>
+</body>
+
+</html>

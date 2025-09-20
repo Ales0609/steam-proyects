@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Heladeria Steam</h1> 
+        <label>Sabor de Helado</label> 
+        <select id="sabores">
+            <option value="arequipe">Arequipe</option>
+            <option value="vainilla">Vainilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="menta">Menta</option>
+        </select> 
+        <label>Cantidad</label> 
+        <input id="cantidad" type="number"> 
+        <button onclick="comprar()">Comprar</button>
+        <h2><!--Sabor--></h2> 
+        <label>Cantidad: </label> 
+        <label>Total: </label>
+        <img id="imagenHelado" src="" alt="Sabor seleccionado" />
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

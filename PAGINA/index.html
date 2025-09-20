@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Ropa y Accesorios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #111;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        button {
+            margin-top: 10px;
+            background: #111;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e91e63;
+        }
+
+        #cart {
+            position: fixed;
+            right: 10px;
+            top: 70px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            width: 250px;
+        }
+
+        #cart h2 {
+            font-size: 18px;
+        }
+
+        #cart ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #cart ul li {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tienda Online</h1>
+        <p>Ropa y Accesorios a tu estilo</p>
+    </header>
+
+    <div class="container" id="products">
+        <!-- Gorras -->
+        <div class="card">
+            <img src="https://via.placeholder.com/200x250?text=Gorra" alt="Gorra">
+            <h3>Gorra Clásica</h3>
+            <p class="price">$15.00</p>
+            <button onclick="addToCart('Gorra Clásica', 15)">Agregar al carrito</button>
+        </div>
+
+        <!-- Camisas -->
+        <div class="card">
+            <img src="https://via.placeholder.com/200x250?text=Camisa" alt="Camisa">
+            <h3>Camisa Casual</h3>
+            <p class="price">$25.00</p>
+            <button onclick="addToCart('Camisa Casual', 25)">Agregar al carrito</button>
+        </div>
+
+        <!-- Buzos -->
+        <div class="card">
+            <img src="https://via.placeholder.com/200x250?text=Buzo" alt="Buzo">
+            <h3>Buzo Deportivo</h3>
+            <p class="price">$35.00</p>
+            <button onclick="addToCart('Buzo Deportivo', 35)">Agregar al carrito</button>
+        </div>
+
+        <!-- Termos -->
+        <div class="card">
+            <img src="https://via.placeholder.com/200x250?text=Termo" alt="Termo">
+            <h3>Termo Metálico</h3>
+            <p class="price">$20.00</p>
+            <button onclick="addToCart('Termo Metálico', 20)">Agregar al carrito</button>
+        </div>
+
+        <!-- Pocillos -->
+        <div class="card">
+            <img src="https://via.placeholder.com/200x250?text=Pocillo" alt="Pocillo">
+            <h3>Pocillo Cerámico</h3>
+            <p class="price">$10.00</p>
+            <button onclick="addToCart('Pocillo Cerámico', 10)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div id="cart">
+        <h2>🛒 Carrito</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total: $<span id="total">0</span></strong></p>
+    </div>
+
+    <script>
+        let cart = [];
+        let total = 0;
+
+        function addToCart(product, price) {
+            cart.push({ product, price });
+            total += price;
+            renderCart();
+        }
+
+        function renderCart() {
+            const cartItems = document.getElementById("cart-items");
+            cartItems.innerHTML = "";
+            cart.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = `${item.product} - $${item.price}`;
+                cartItems.appendChild(li);
+            });
+            document.getElementById("total").textContent = total;
+        }
+    </script>
+</body>
+
+</html>
