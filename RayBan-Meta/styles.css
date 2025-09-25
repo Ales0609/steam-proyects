@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.442), rgba(0, 0, 0, 0));
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px; /* menos espacio arriba/abajo y a los lados */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Logo */
+.logo img {
+    height: 15px;
+}
+
+/* Links del centro */
+.nav-izq {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 500px;
+}
+
+.nav-izq a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+
+.nav-der {
+    list-style: none;
+    display: flex;
+    gap: 33px;
+    padding-right: 10px;
+}
+
+.nav-der .globe{
+    display: flex;
+    padding-right: 0px ;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.globe img {
+    font-size: 14px;
+}
+
+.globe span {
+    color: white;
+    font-size: 14px;      
+}
+
+.nav-der a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8);
+    background: linear-gradient(rgba(0, 0, 0, 0.408), rgba(255, 255, 255, 0.036));
+    pointer-events: none;
+}
+
+.contenido {
+    gap: 10px;
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botones .info {
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(33, 33, 252);
+    top: 40vh;
+    left: 10vw;
+}
+
+.botones .info:hover {
+    transition: 1s;
+    background-color: rgb(64, 64, 247);
+    cursor: pointer;
+}
+
+.botones .comprar:hover {
+    transition: 1s;
+    background-color: rgb(219, 219, 219);
+    cursor: pointer;
+}
+
+.botones .comprar {
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenido img {
+    width: 200px;
+}
+
+.contenido h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 350;
+    font-size: 50px;
+    word-spacing: 5px;
+}
+
+.contenido p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 350;
+    font-size: 13px;
+    width: 380px;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.botones a {
+    text-decoration: none;
+}
