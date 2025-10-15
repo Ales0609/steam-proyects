@@ -1,0 +1,131 @@
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2b36;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.contenedor {
+    background: white;
+    width: 75%;
+    max-width: 900px;
+    min-height: 450px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección productos */
+.productos {
+    width: 50%;
+    padding-right: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.producto h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.producto p {
+    font-size: 15px;
+    color: #5b5b5b;
+    margin: 0;
+    font-style: italic;
+}
+
+.producto button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.producto button img {
+    width: 28px;
+}
+
+/* Sección carrito */
+.carrito {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#carrito-items {
+    background-color: #d4d4d4;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    max-height: 200px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#carrito-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000000;
+}
+
+#carrito-items li button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#carrito-items li button:hover {
+    background: #ffabab;
+}
+
+#carrito-total {
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: right;
+}
+
+/* Botón comprar */
+#comprar {
+    background: #49e36b;
+    border: none;
+    padding: 10px;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+#comprar:hover {
+    color: #fff;
+    background: #3bc45a;
+}

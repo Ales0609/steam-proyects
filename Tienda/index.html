@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="productos">
+            <h1>Tienda</h1>
+
+            <div class="producto">
+                <h2>Pizza</h2>
+                <p>$2000</p>
+                <button onclick="AgregarAlCarrito(1)">
+                    <img src="cart-plus.png" alt="+">
+                </button>
+            </div>
+
+            <div class="producto">
+                <h2>Empanada</h2>
+                <p>$4000</p>
+                <button onclick="AgregarAlCarrito(2)">
+                    <img src="cart-plus.png" alt="+">
+                </button>
+            </div>
+            
+            <div class="producto">
+                <h2>Coca-Cola</h2>
+                <p>$4000</p>
+                <button onclick="AgregarAlCarrito(3)">
+                    <img src="cart-plus.png" alt="+">
+                </button>
+            </div>
+        </div>
+
+        <div class="carrito">
+            <h2>Carrito</h2>
+            <ul id="carrito-items"></ul>
+            <p id="carrito-total">Total: $0</p>
+            <button id="comprar">Comprar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
