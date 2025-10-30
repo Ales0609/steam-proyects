@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;''''''''''''''''
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: #555;
+}
+
+/* Botón hamburguesa */
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburguesa img {
+    width: 30px;
+    height: 30px;
+    filter: invert(0%);
+    background-color: #333;
+}
+
+.split {
+    display: flex;
+    height: 100vh;
+}
+
+.left,
+.right {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.left {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0)), url("castle.png");
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.right {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0)), url("stone.png");
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburguesa {
+        display: flex;
+    }
+
+    .split {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        height: 50vh;
+    }
+}

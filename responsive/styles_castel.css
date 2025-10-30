@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0)), url("castle.png");
+    color: white;
+
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: #555;
+}
+
+/* Botón hamburguesa */
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburguesa img {
+    width: 30px;
+    height: 30px;
+    filter: invert(0%);
+    background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburguesa {
+        display: flex;
+    }
+}
+
+/* Castillo */
+.contendor {
+    padding: 20px;
+    text-align: center;
+}
+.contendor h1 {
+    margin-bottom: 10px;
+}
+.contendor p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+}
