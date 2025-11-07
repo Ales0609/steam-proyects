@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.533);
+    text-align: center;
+}
+
+.titulo {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #202020;
+}
+
+.contenido {
+    font-size: 25px;
+}
+
+#resultado {
+    font-weight: bold;
+    color: #ff4500;
+}
