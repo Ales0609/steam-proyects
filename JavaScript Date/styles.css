@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -13,6 +13,7 @@ body {
 }
 
 .contenedor {
+    width: 400px;
     background-color: #ffffff;
     padding: 20px 40px;
     border-radius: 10px 0px 10px 0px;
@@ -33,4 +34,38 @@ body {
 #resultado {
     font-weight: bold;
     color: #ff4500;
+}
+
+@media (min-width: 340px) and (max-width: 769px) {
+    #titulo {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #resultado {
+        font-size: 30px;
+    }
+
+    .contenedor {
+        width: 250px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1070px) {
+    #titulo {
+        font-size: 33px;
+        text-align: center;
+
+    }
+
+    #resultado {
+        font-size: 32px;
+    }
+
+    .contenedor {
+        width: 700px;
+        height: 100px;
+        text-align: center;
+    }
 }

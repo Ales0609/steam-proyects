@@ -20,7 +20,7 @@ function calcularDiasParaNavidad() {
     }
 
     const diferencia = navidad - hoy;
-    const diasRestantes = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const diasRestantes = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
     document.getElementById("titulo").innerHTML = `Cuantos dias faltan para Navidad ${navidad.getFullYear()}?`;
     document.getElementById("resultado").innerHTML = diasRestantes;
 }
