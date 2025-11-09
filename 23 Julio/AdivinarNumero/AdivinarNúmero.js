@@ -7,10 +7,10 @@
         let usuario = parseInt(document.getElementById('numero').value);
 
         if (usuario > comp){
-            alert(`Tu numero es mayor ${comp}, intentos ${intentos}`);
+            alert(`Tu numero es mayor, intentos ${intentos}`);
             intentos = intentos + 1
         } else if (usuario < comp){
-            alert(`Tu numero es menor ${comp}, intentos ${intentos}`);
+            alert(`Tu numero es menor, intentos ${intentos}`);
             intentos = intentos + 1
         } else if (usuario === comp){
             alert(`Adivinaste! ${comp}, intentos ${intentos}`);
