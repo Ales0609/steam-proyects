@@ -1,20 +1,101 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     display: flex;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: rgb(54, 59, 64);
     text-align: center;
     padding: 20px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-#historial{
+.contenedor {
+    background: linear-gradient(#212121, #212121) padding-box,
+        linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 16px;
+    width: 400px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    color: #848484;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.contenedor #numero {
+    align-self: center;
+    font-family: inherit;
+    padding: 12px 16px;
+    width: 50px;
+    height: 20px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #414141;
+    outline: none;
+    caret-color: #e81cff;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.contenedor .btn {
+    position: relative;
+    background: linear-gradient(#212121, #212121) padding-box,
+        linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 12px;
+    border-radius: 20px;
+    color: #d0d0d0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: inherit;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* capa extra para animar el hover */
+.contenedor .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    background: linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.contenedor .btn:hover::before {
+    opacity: 1;
+}
+
+#historial {
     padding-top: 20px;
     font-size: 17px;
 }
