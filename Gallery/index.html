@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <nav>
+            <a href="#user">User</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="user" id="user">
+            <img src="person.png" alt="Profile">
+            <h2>Hello! i'm a photographer</h2>
+            <a href="#">Here's some of my work.</a>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div data-title="Bosque">
+                <img src="bosque.jpg" alt="img1">
+            </div>
+            <div data-title="Flores">
+                <img src="flores.jpg" alt="img2">
+            </div>
+            <div data-title="Gotas">
+                <img src="gotas.jpg" alt="img3">
+            </div>
+            <div data-title="Laptop">
+                <img src="laptop.jpg" alt="img4">
+            </div>
+            <div data-title="Libro">
+                <img src="libro.jpg" alt="img5">
+            </div>
+            <div data-title="Montañas">
+                <img src="montañas.jpg" alt="img6">
+            </div>
+            <div data-title="Playa">
+                <img src="playa.jpg" alt="img7">
+            </div>
+        </section>
+
+        <section class="form" id="contact">
+            <h2>Contact me!</h2>
+            <form action="/enviar" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
