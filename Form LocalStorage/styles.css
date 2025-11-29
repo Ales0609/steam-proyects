@@ -1,4 +1,4 @@
-    *{
+*{
         margin: 0;
         padding: 0;
     }
@@ -11,7 +11,7 @@
         height: 100vh;
     }
 
-    form{
+    .contenedor{
         display: flex;
         flex-direction: column;
         width: 500px;
@@ -65,4 +65,3 @@
     button:hover{
         background-color: #45a049;
     }
-
