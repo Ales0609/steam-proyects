@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,10 @@
 <body>
     <h1>Generador de Contraseñas</h1>
 
-    <div class="contenedor">
+<div class="contenedor">
 
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="izquierda">
         <label>Longitud:</label>
         <input type="number" id="length" min="4" max="50" value="12">
 
@@ -21,27 +23,27 @@
         <label><input type="checkbox" id="numeros" checked>Incluir números</label>
         <label><input type="checkbox" id="simbolos">Incluir símbolos</label>
 
-
         <button id="generateBtn">Generar Contraseña</button>
 
-        <!-- Mostrar la contraseña generada -->
         <h2>Contraseña:</h2>
         <div id="output"></div>
-        
-<!-- Botón para copiar la contraseña -->
+
         <button id="copiarBtn">Copiar</button>
 
-<!-- Barra de fortaleza de la contraseña -->
         <h3>Fortaleza:</h3>
         <div id="barra-fuerza">
             <div id="barra-interna"></div>
         </div>
         <p id="texto-fuerza">-</p>
+    </div>
 
-<!-- Historial de contraseñas generadas -->
+    <!-- COLUMNA DERECHA (HISTORIAL) -->
+    <div class="derecha">
         <h2>Historial</h2>
         <div id="historial"></div>
         <button id="borrarHistorialBtn">Borrar Historial</button>
+    </div>
+
     </div>
 </body>
 <script src="script.js"></script>
