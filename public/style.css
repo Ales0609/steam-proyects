@@ -1,0 +1,369 @@
+/* --- RESET Y ESTILOS BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- ESTRUCTURA PRINCIPAL --- */
+.estructura-principal {
+    display: flex;
+    flex: 1;
+}
+
+/* --- PANEL IZQUIERDO --- */
+.panel-promocional {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #0C1014;
+    text-align: center;
+    border-right: 3px solid #3d4f5c;
+    border-bottom: 1px solid #3d4f5c;
+}
+
+.contenido-promocional {
+    max-width: 800px;
+    height: 610px;
+}
+
+.logo-instagram {
+    display: flex;
+    width: 100px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+h1 span {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.imagen-mockup {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+/* --- PANEL DERECHO --- */
+.panel-acceso {
+    flex: 1;
+    background-color: #152127;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #3d4f5c;
+}
+
+.caja-inicio-sesion {
+    width: 100%;
+    max-width: 550px; /* Ajustado para parecerse más a Instagram */
+    padding: 0;
+    text-align: center;
+}
+
+/* --- BOTONES FACEBOOK Y CREAR CUENTA --- */
+.caja-inicio-sesion #boton-facebook {
+    width: 100%;
+    background-color: #152127;
+    color: white;
+    border: 1px solid #2d3f56;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    align-items: center;
+}
+
+.caja-inicio-sesion #boton-crear-cuenta {
+    width: 100%;
+    background-color: #152127;
+    color: white;
+    border: 1px solid #4599ff;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    align-items: center;
+}
+
+.caja-inicio-sesion #boton-facebook:hover,
+.caja-inicio-sesion #boton-crear-cuenta:hover {
+    background-color: #34454ed3;
+}
+
+.encabezado-login {
+    text-align: start;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* --- LÓGICA DE ANIMACIÓN DE INPUTS --- */
+.grupo-campo-flotante {
+    position: relative;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.grupo-campo-flotante input {
+    width: 100%;
+    padding: 24px 12px 10px; /* Espacio superior para el label */
+    background: #152127;
+    border: 1px solid #3d4f5c;
+    border-radius: 16px;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.grupo-campo-flotante input:hover {
+    border: 1.4px solid #c4ccd6;
+}
+
+.grupo-campo-flotante label {
+    position: absolute;
+    left: 15px;
+    top: 47%;
+    transform: translateY(-50%);
+    color: #8e99a7;
+    pointer-events: none;
+    transition: all 0.15s ease;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+/* Animación cuando el input tiene foco o contenido */
+.grupo-campo-flotante input:focus ~ label,
+.grupo-campo-flotante input:not(:placeholder-shown) ~ label {
+    top: 7px;
+    transform: translateY(0);
+    font-size: 0.8rem;
+    color: #a8b3bf; /* Color más suave al flotar */
+}
+
+.grupo-campo-flotante input:focus {
+    border-color: #55667a; /* Color de borde al escribir */
+}
+
+/* --- BOTÓN LOGIN --- */
+.boton-ingresar {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 0.9375rem;
+}
+
+/* --- RECUPERACIÓN --- */
+.zona-recuperacion {
+    margin-bottom: 40px;
+}
+
+.zona-recuperacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.zona-recuperacion button {
+    width: 100%;
+    padding: 10px;
+    background-color: #152127;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.zona-recuperacion button:hover {
+    background-color: #34454ed3;
+}
+
+/* --- ENLACES --- */
+.enlace-facebook {
+    background: none;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px 0;
+    color: #4cb5f9;
+    font-size: 0.9rem;
+}
+
+.enlace-crear-cuenta {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: #4599ff;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* --- META --- */
+.zona-meta {
+    margin-top: 10px;
+    filter: brightness(0) invert(1);
+}
+
+/* --- FOOTER --- */
+.pie-pagina {
+    background-color: #0C1014;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #8e99a7;
+}
+
+.menu-footer a {
+    color: #8e99a7;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+
+/* --- RESPONSIVE PARA TABLETS Y CELULARES --- */
+@media (max-width: 1024px) {
+    /* Estructura pasa a columna */
+    .estructura-principal {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    /* Panel izquierdo ocupa menos */
+    .panel-promocional .contenido-promocional h1, span {
+        display: none;
+    }
+
+    .panel-promocional{
+        flex: none;
+        height: 100px;
+        border-right: none;
+        border-bottom: 3px solid #3d4f5c;
+        padding: 20px;
+    }
+
+    .logo-instagram{
+        margin-bottom: 0px;
+    }
+
+    /* Ajuste del contenido */
+    .contenido-promocional {
+        height: auto;
+    }
+
+    /* Mockup más pequeño */
+    .imagen-mockup {
+        display: none;
+    }
+
+    /* Panel derecho centrado */
+    .panel-acceso {
+        padding: 40px 20px;
+    }
+}
+
+
+/* --- RESPONSIVE PARA CELULARES --- */
+@media (max-width: 600px) {
+
+    /* Panel izquierdo más compacto */
+    .panel-promocional {
+        padding: 20px 15px;
+    }
+
+    /* Logo más pequeño */
+    .logo-instagram {
+        width: 75px;
+    }
+
+    /* Texto principal reducido */
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    /* Mockup se adapta */
+    .imagen-mockup {
+        max-width: 260px;
+        border-radius: 15px;
+    }
+
+    /* Caja login ocupa casi todo */
+    .caja-inicio-sesion {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Inputs y botones más cómodos */
+    .grupo-campo-flotante input {
+        font-size: 0.85rem;
+        padding: 22px 10px 9px;
+    }
+
+    .boton-ingresar {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    /* Footer en columna */
+    .menu-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .menu-footer a {
+        margin: 4px;
+        font-size: 0.7rem;
+    }
+}

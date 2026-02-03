@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="estructura-principal">
+
+        <!-- Sección informativa izquierda -->
+        <section class="panel-promocional">
+            <div class="contenido-promocional">
+
+                <img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png"
+                    alt="Instagram Logo"
+                    class="logo-instagram">
+
+                <h1>Mira los momentos cotidianos de tus <br><span>mejores amigos</span>.</h1>
+
+                <div class="contenedor-mockup">
+                    <img src="https://static.cdninstagram.com/rsrc.php/yN/r/-erGonz07kB.webp"
+                        alt="Mockup Historias"
+                        class="imagen-mockup">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de login derecha -->
+        <section class="panel-acceso">
+
+            <div class="caja-inicio-sesion">
+
+                <header class="encabezado-login">
+                    <h2>Iniciar sesión en Instagram</h2>
+                </header>
+
+                <form id="formulario-acceso">
+
+                    <!-- Usuario -->
+                    <div class="grupo-campo-flotante">
+                        <input type="text" id="campo-usuario" placeholder=" " required>
+                        <label for="campo-usuario">Número de celular, usuario o correo</label>
+                    </div>
+
+                    <!-- Contraseña -->
+                    <div class="grupo-campo-flotante">
+                        <input type="password" id="campo-clave" placeholder=" " required>
+                        <label for="campo-clave">Contraseña</label>
+                    </div>
+
+                    <button type="submit" class="boton-ingresar">Iniciar sesión</button>
+                </form>
+
+                <!-- Recuperar contraseña -->
+                <div class="zona-recuperacion">
+                    <button>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </button>
+                </div>
+
+                <!-- Botón Facebook -->
+                <button id="boton-facebook">
+                    <a href="#" class="enlace-facebook">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                            alt="FB"
+                            width="16">
+                        Iniciar sesión con Facebook
+                    </a>
+                </button>
+
+                <!-- Crear cuenta -->
+                <button id="boton-crear-cuenta">
+                    <a href="#" class="enlace-crear-cuenta">Crear cuenta nueva</a>
+                </button>
+
+                <!-- Logo Meta -->
+                <div class="zona-meta">
+                    <img src="1280px-Meta-Logo.png"
+                        alt="Meta Logo"
+                        width="60">
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="pie-pagina">
+        <nav class="menu-footer">
+            <a href="#">Meta</a>
+            <a href="#">Información</a>
+            <a href="#">Blog</a>
+            <a href="#">Empleo</a>
+            <a href="#">Ayuda</a>
+            <a href="#">API</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Condiciones</a>
+            <a href="#">Ubicaciones</a>
+            <a href="#">Instagram Lite</a>
+            <a href="#">Meta AI</a>
+            <a href="#">Threads</a>
+            <a href="#">Importación de contactos y no usuarios</a>
+            <a href="#">Meta Verified</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
