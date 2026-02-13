@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playwrite NZ Basic", cursive;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.45s ease forwards;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dcdcdc, #bfbfbf);
+}
+
+.contenedor {
+    width: 420px;
+    padding: 45px;
+    border-radius: 28px;
+    background: #e6e6e6;
+    box-shadow:
+        15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    text-align: center;
+}
+
+.contenedor h1 {
+    display: flex;
+    color: #2f2f2f;
+    justify-content: center;
+    margin-bottom: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contenedor a {
+    display: flex;
+    flex-direction: inherit;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.contenedor a button {
+    width: 100%;
+    padding: 18px;
+    margin: 14px 0;
+    font-weight: 500;
+    border: none;
+    border-radius: 14px;
+    background: #e6e6e6;
+    color: #333;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow:
+        6px 6px 12px #c8c8c8,
+        -6px -6px 12px #ffffff;
+    letter-spacing: 0.3px;
+    transition: all 0.25s ease;
+}
+
+.contenedor a button:hover {
+    border: 1px solid white;
+    box-shadow:
+    10px 10px 20px #c2c2c2,
+    -10px -10px 20px #ffffff;
+    font-size: 18px;
+    transform: translateY(-3px);
+    color: #000000;
+}
+
+.contenedor a button:active {
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+    transform: scale(0.99);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

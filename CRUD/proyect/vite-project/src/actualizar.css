@@ -1,0 +1,117 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.45s ease forwards;
+    background: #111;
+    color: #e5e5e5;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Contenedor */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* Título */
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Buscador */
+#buscador {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #222;
+    color: #eee;
+    font-size: 15px;
+}
+
+#buscador:focus {
+    outline: none;
+    border-color: #666;
+}
+
+/* Cards */
+.card {
+    background: #222;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    display: grid;
+    gap: 10px;
+}
+
+/* Inputs dentro de la card */
+.card input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #111;
+    color: #eee;
+}
+
+/* Botón actualizar */
+.card button {
+    margin-top: 5px;
+    padding: 10px;
+    background: #3a3a3a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.card button:hover {
+    background: #5a5a5a;
+}
+
+/* Botón volver */
+.btn-volver {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #2a2a2a;
+    color: #ddd;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.btn-volver:hover {
+    background: #444;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

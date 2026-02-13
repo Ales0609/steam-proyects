@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            background: linear-gradient(135deg, #dcdcdc, #bfbfbf);
+        }
+    </style>
+    <link rel="stylesheet" href="./src/agregar.css">
+    <title>Agregar Estudiantes</title>
+</head>
+
+<body>
+    <div class="panel">
+
+        <button class="volver" onclick="window.location.href='/'">
+            ← Volver al menú
+        </button>
+
+        <h1>Agregar Estudiante</h1>
+
+        <form id="form-estudiante">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="text" id="lastName" placeholder="Apellido" required>
+            <input type="number" id="Phone" placeholder="Teléfono" required>
+            <input type="text" id="gender" placeholder="Género" required>
+
+            <button type="submit" class="guardar">Añadir Estudiante</button>
+        </form>
+
+    </div>
+
+    <script type="module" src="/src/Post.js"></script>
+</body>
+</html>
