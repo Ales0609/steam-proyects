@@ -41,9 +41,7 @@ app.post('/movies', async (req, res) => {
       [title, year, genre] // Placeholders!
     );
     res.status(201).json({ id: result.insertId });
-  } catch (error) {
-    res.status(500).json({ msg: 'Falló', err: error });
-  }
+  } finally{}
 });
 
 app.delete('/movies/:id', async (req, res) => {
